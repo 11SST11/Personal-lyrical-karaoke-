@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
     <title>Lyrics Finder</title>
     <link rel="stylesheet" href="popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
+        <img src="icons/icon.png" alt="Lyrics Finder Logo" class="logo">
         <h1>Lyrics Finder</h1>
         <input type="text" id="song" placeholder="Song Name" autocomplete="off" />
         <div id="songSuggestions" class="suggestions"></div>
         <input type="text" id="singer" placeholder="Singer Name" autocomplete="off" />
         <div id="singerSuggestions" class="suggestions"></div>
         <button id="fetchLyrics">Get Lyrics</button>
-        <div id="lyrics"></div>
+        <button id="playSong">Play Song</button>
+        <div id="lyricsBox">
+            <div id="lyrics"></div>
+        </div>
         <div id="error"></div>
         <button id="saveLyrics">Save Lyrics</button>
         <button id="viewSavedLyrics">View Saved Lyrics</button>
@@ -27,4 +31,3 @@
     <script src="popup.js"></script>
     <script src="storage.js"></script>
 </body>
-</html>
