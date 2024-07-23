@@ -7,12 +7,24 @@
 <body>
     <div class="container">
         <h1>Lyrics Finder</h1>
-        <input type="text" id="song" placeholder="Song Name" />
-        <input type="text" id="singer" placeholder="Singer Name" />
+        <input type="text" id="song" placeholder="Song Name" autocomplete="off" />
+        <div id="songSuggestions" class="suggestions"></div>
+        <input type="text" id="singer" placeholder="Singer Name" autocomplete="off" />
+        <div id="singerSuggestions" class="suggestions"></div>
         <button id="fetchLyrics">Get Lyrics</button>
         <div id="lyrics"></div>
         <div id="error"></div>
+        <button id="saveLyrics">Save Lyrics</button>
+        <button id="viewSavedLyrics">View Saved Lyrics</button>
+        <button id="copyLyrics">Copy to Clipboard</button>
+        <button id="toggleMode">Switch to Dark Mode</button>
+    </div>
+    <div id="savedLyricsContainer" class="hidden">
+        <h2>Saved Lyrics</h2>
+        <div id="savedLyricsList"></div>
+        <button id="closeSavedLyrics">Close</button>
     </div>
     <script src="popup.js"></script>
+    <script src="storage.js"></script>
 </body>
 </html>

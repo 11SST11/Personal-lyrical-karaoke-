@@ -30,6 +30,114 @@ button {
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.suggestions {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    max-height: 100px;
+    overflow: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.suggestions div {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.suggestions div:hover {
+    background-color: #f0f0f0;
+}
+
+#lyrics {
+    margin-top: 20px;
+    white-space: pre-wrap;
+}
+
+#error {
+    color: red;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#savedLyricsContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#savedLyricsContainer h2 {
+    margin-top: 0;
+}
+
+#savedLyricsList {
+    margin-bottom: 10px;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode input, 
+.dark-mode button {
+    background-color: #444;
+    border-color: #555;
+    color: white;
+}
+
+.dark-mode .suggestions {
+    background-color: #444;
+    color: white;
+}
+/* body {
+    font-family: Arial, sans-serif;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 10px;
+}
+
+h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 button:hover {
@@ -44,4 +152,4 @@ button:hover {
 #error {
     color: red;
     margin-top: 10px;
-}
+} */

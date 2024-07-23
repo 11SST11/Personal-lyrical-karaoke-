@@ -1,2 +1,5 @@
 // This file is intentionally left blank for this example.
-// In a real-world scenario, you might use this for background tasks or handling events.
+// IRL for background tasks or handling events.
+chrome.runtime.onInstalled.addListener(() => {
+    console.log('LyricsFinder extension installed.');
+});
