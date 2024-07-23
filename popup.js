@@ -210,6 +210,7 @@
 
 
 
+
 document.addEventListener('DOMContentLoaded', function() {
     const songInput = document.getElementById('song');
     const singerInput = document.getElementById('singer');
@@ -277,7 +278,7 @@ document.addEventListener('DOMContentLoaded', function() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
-                'Authorization': 'Basic ' + btoa('896a8ec16b134876b40eabda96ac9ff9:fbf46832cb4847519fc713b458ac0e98')
+                // 'Authorization': 'Basic ' + btoa('xxxxxxxx')    api id's -<
             },
             body: 'grant_type=client_credentials'
         })
